@@ -162,6 +162,9 @@ ________________________
 
 .item1{
     background-color: rgb(255, 190, 225);
+    position: relative;
+    top: 50px;
+    left:100px;
 }
 
 .item2{
@@ -173,10 +176,28 @@ ________________________
 Units
 ________________________
 */
-.box__container {
+.font__container {
     height: auto;
     margin: 10px;
-    width: 70%;
+    font-size: 25px;
+}
+.font__1em {
+    font-size: 1em;
+}
+.font__1rem {
+    font-size: 1rem;
+}
+.font__100percent {
+    font-size: 100%;
+}
+.font__2em {
+    font-size: 2em;
+}
+.font__2rem {
+    font-size: 2rem;
+}
+.font__200percent {
+    font-size: 200%;
 }
 .box {
     border: 1px solid var(--grey-900);
@@ -189,6 +210,13 @@ ________________________
     height: auto;
     margin: 10px;
     font-size: 25px;
+}
+
+.box__percent {
+    width: 50%;
+}
+.box__pixels {
+    width: 200px;
 }
 
 
@@ -215,7 +243,12 @@ ________________________
     background-color: var(--primary-100);
 }
 /* Extra small devices (phones, 600px and down) */
+@media screen and (min-width: 600px) {
+    .media__container{
+        background-color: var(--primary-800);
+    }
 
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
